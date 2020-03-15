@@ -1,0 +1,47 @@
+.video-item {
+  width: 50%;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+}
+
+.video-img-container {
+  position: relative;
+  max-height: 220rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.video-img {
+  width: 100%;
+}
+
+.video-info {
+  position: absolute;
+  bottom: 6rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.paly-count {
+  margin-right: 5rpx;
+  vertical-align: text-top;
+}
+
+.comment-count {
+  margin-right: 5rpx;
+  vertical-align: text-top;
+}
+
+.video-desc {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

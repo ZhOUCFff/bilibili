@@ -1,0 +1,18 @@
+<view class="video-item">
+    <!-- 图片 -->
+    <view class="video-img-container">
+      <image mode="widthFix" class="video-img" src="{{videoInfo.imgSrc}}"></image>
+      <view class="video-info">
+        <view>
+          <text class="iconfont icon-gerenzhongxin-icon- paly-count"></text>
+          <text>{{videoInfo.playCount}}</text>
+        </view>
+        <view>
+          <text class="iconfont icon-pinglun1 comment-count"></text>
+          <text>{{videoInfo.commentCount}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- 描述 -->
+    <text class="video-desc">{{videoInfo.desc}}</text>
+</view>

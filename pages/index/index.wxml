@@ -1,0 +1,40 @@
+<view>
+  <NavBar />
+  <!-- 首页导航 -->
+  <view class="navList">
+    <scroll-view class="nav-scroll" scroll-x>
+      <view class="navlist-item {{index===currentIndex?'active':''}}" wx:for="{{navList}}" wx:key="index" bindtap="navItemClick" data-index="{{index}}">
+        <text>{{item.text}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 轮播图 -->
+  <swiper class="swiper" indicator-dots autoplay interval="{{3000}}" circular indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#fff">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index">
+      <image class="swiper-img" mode="widthFix" src="{{item.imgSrc}}"></image>
+    </swiper-item>
+  </swiper>
+  <!-- 视频列表 -->
+  <view class="vedio-list">
+    <view class="video-item" wx:for="{{videoList}}" wx:key="index">
+      <navigator url="../detail/detail?id={{item.id}}">
+        <!-- 图片 -->
+        <view class="video-img-container">
+          <image mode="widthFix" class="video-img" src="{{item.imgSrc}}"></image>
+          <view class="video-info">
+            <view>
+              <text class="iconfont icon-gerenzhongxin-icon- paly-count"></text>
+              <text>{{item.playCount}}</text>
+            </view>
+            <view>
+              <text class="iconfont icon-pinglun1 comment-count"></text>
+              <text>{{item.commentCount}}</text>
+            </view>
+          </view>
+        </view>
+        <!-- 描述 -->
+        <text class="video-desc">{{item.desc}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

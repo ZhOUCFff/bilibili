@@ -1,0 +1,16 @@
+<view class="nav-bar">
+  <!-- logo -->
+  <navigator class="logo">
+    <image class="logo-img" mode="widthFix" src="../../assets/img/navbar/logo.png"></image>
+  </navigator>
+  <!-- 搜索 -->
+  <view class="search">
+    <image class="search-img" mode="widthFix" src="../../assets/img/navbar/search.png"></image>
+  </view>
+  <!-- 用户 -->
+  <view class="user">
+    <image class="user-img" mode="widthFix"  src="../../assets/img/navbar/tv.png"></image>
+  </view>
+  <!-- 下载 -->
+  <view class="download">下载app</view>
+</view>

@@ -1,0 +1,45 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 10rpx;
+  background-color: #fff;
+}
+
+.logo {
+  flex: 0.6;
+}
+
+.logo-img {
+  width: 140rpx;
+}
+
+.search {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-img {
+  width: 45rpx;
+}
+
+.user {
+  flex: 0.1;
+  display: flex;
+  justify-content: center;
+}
+
+.user-img {
+  width: 55rpx;
+}
+
+.download {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  background-color: #fb7299;
+  border-radius: 8rpx;
+  padding: 5rpx;
+  color: #fff;
+  font-size: 28rpx;
+}

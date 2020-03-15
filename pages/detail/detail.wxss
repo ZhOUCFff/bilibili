@@ -1,0 +1,89 @@
+page {
+  font-size: 28rpx;
+}
+
+.video {
+  padding: 10rpx;
+}
+
+.video video {
+  width: 100%;
+}
+
+.video-param {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 24rpx;
+}
+
+.recommend-item {
+  width: 100%;
+  display: flex;
+  max-height: 140rpx;
+  margin-top: 18rpx;
+}
+
+.recommend-img-container {
+  width: 30%;
+}
+
+.recommend-img {
+  width: 100%;
+  border-radius: 8rpx;
+}
+
+.recommend-info {
+  width: 70%;
+}
+
+.recommend-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rpx 15rpx;
+}
+
+.recommend-desc {
+  color: #fb7299;
+}
+
+.recommend-msg {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.recommend-desc {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.comment-item {
+  display: flex;
+  padding: 10rpx 10rpx;
+  border-bottom: 6rpx solid #eaeaea;
+}
+
+.avator {
+  width: 10%;
+  border-radius: 50%;
+}
+
+.comment-info {
+  width: 90%;
+  padding-left: 15rpx;
+}
+
+.comment-param {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-content {
+  margin-top: 15rpx;
+}

@@ -1,0 +1,9 @@
+@import "./assets/css/iconfont.wxss";
+
+page,view,image,swiper,swiper-item,navgator,video {
+  box-sizing: border-box;
+}
+
+image {
+  vertical-align: middle;
+}

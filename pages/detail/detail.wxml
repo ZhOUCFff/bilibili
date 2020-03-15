@@ -1,0 +1,59 @@
+<view>
+  <view wx:if="{{videoInfo}}">
+    <NavBar />
+    <view class="video">
+      <!-- 视频播放 -->
+      <video src="{{videoInfo.videoSrc}}" controls></video>
+      <!-- 视频标题 -->
+      <view class="video-title">
+        <text>{{videoInfo.videoTitle}}</text>
+        <text class="iconfont icon-fanhui"></text>
+      </view>
+      <!-- 视频信息 -->
+      <view class="video-param">
+        <text class="author">{{videoInfo.author}}</text>
+        <text class="paly-count">{{videoInfo.playCount}}次观看</text>
+        <text class="paly-count">{{videoInfo.commentCount}}弹幕</text>
+        <text class="date">{{videoInfo.date}}</text>
+      </view>
+      <!-- 推荐视频列表 -->
+      <view class="recommend-list">
+        <view class="recommend-item" wx:for="{{recommendList}}" wx:key="index">
+          <!-- 图片 -->
+          <view class="recommend-img-container">
+            <image mode="widthFix" class="recommend-img" src="{{item.imgSrc}}"></image>
+          </view>
+          <!-- 描述 -->
+          <view class="recommend-info">
+            <text class="recommend-desc">{{item.title}}</text>
+            <view class="recommend-msg">
+              <text>{{item.playMsg}}万 </text>
+              <text>{{item.commentCount}}弹幕</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 评论模块 -->
+      <view class="comment">
+        <view class="comment-title">
+          <text>评论{{commentData.commentTotalCount}}</text>
+        </view>
+        <view class="comment-list">
+          <view class="comment-item" wx:for="{{commentData.commentList}}" wx:key="index">
+            <image mode="widthFix" class="avator" src="{{item.userIconSrc}}"></image>
+            <view class="comment-info">
+              <view class="comment-param">
+                <text>{{item.username}}</text>
+                <text>{{item.commentDate}}</text>
+              </view>
+              <view class="comment-content">
+                <text>{{item.commentInfo}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <text wx:else>抱歉，数据请求失败</text>
+</view>

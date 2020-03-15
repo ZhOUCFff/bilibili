@@ -1,0 +1,81 @@
+page {
+  padding: 10rpx;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.nav-scroll {
+  white-space: nowrap;
+}
+
+.navlist-item {
+  display: inline-block;
+  padding: 10rpx 15rpx;
+}
+
+.active {
+  border-bottom: 6rpx solid #fb7299;
+}
+
+.swiper {
+  height: 220rpx;
+  margin-top: 10rpx;
+}
+
+.swiper-img {
+  width: 100%;
+}
+
+.vedio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10rpx;
+}
+
+.video-item {
+  width: 50%;
+  padding: 0 10rpx;
+  margin-top: 20rpx;
+}
+
+.video-img-container {
+  position: relative;
+  max-height: 220rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.video-img {
+  width: 100%;
+}
+
+.video-info {
+  position: absolute;
+  bottom: 6rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10rpx;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.paly-count {
+  margin-right: 5rpx;
+  vertical-align: text-top;
+}
+
+.comment-count {
+  margin-right: 5rpx;
+  vertical-align: text-top;
+}
+
+.video-desc {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
